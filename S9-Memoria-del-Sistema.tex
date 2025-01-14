@@ -1,4 +1,4 @@
-% Created 2025-01-13 Mon 11:58
+% Created 2025-01-13 Mon 21:55
 % Intended LaTeX compiler: pdflatex
 \documentclass[presentation]{beamer}
 \usepackage[utf8]{inputenc}
@@ -44,33 +44,10 @@
 
 
 \section{Indicaciones}
-\label{sec:orga2a8dde}
-\begin{frame}[fragile,allowframebreaks]{Indicaciones}
- \begin{itemize}
-\item Recuerde que si options: H:2, entonces: 
-\begin{itemize}
-\item \texttt{*} Declara el nombre de la Sección
-\item \texttt{**} Declara el nombre de la diapositiva
-\end{itemize}
-\item Puede alterar la estructura de la diapositiva si lo considera
-necesario
-\item Para este tema consulte las siguientes fuentes:
-\begin{itemize}
-\item \textcite{stallings2006}, 7ma edición, 2006, Español, Capítulo 5
-página 171 y Capítulo 6 página 197 \autocite{stallings2006}.
-\item \textcite{stallings2022computer}, 11ava edición, 2022, English,
-Capítulo 4 desde página 136, Capítulo 5 desde página 162 y Capitulo
-6 desde 201 \autocite{stallings2022computer}.
-\end{itemize}
-\item La tupla (E1,7, 97) significa Grupo E1, Libro Edición 7, página 97
-del PDF (no del libro)
-\item Las personas que exponen suben la presentación en formato .ORG y
-.PDF
-\item Las personas que atienden suben los apuntes de la clase de acuerdo al
-formato de toma de notas en .ORG y .PDF
-\end{itemize}
+\label{sec:orga4b06de}
+\begin{frame}[allowframebreaks]{Indicaciones}
 \end{frame}
-\begin{frame}[label={sec:org1d8aa3f}]{Diseño de las Diapositivas}
+\begin{frame}[label={sec:orgbe6d252}]{Diseño de las Diapositivas}
 \begin{itemize}
 \item Para diseñar sus diapositivas puede consultar cualquiera de las
 presentaciones .ORG desarrolladas por el profesor así como al
@@ -79,7 +56,7 @@ archivo \href{https://github.com/LeninGF/EPN-Lectures/blob/main/iccd332ArqComp-2
 puede copiar y sustituir por su texto propio.
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:orgb70bab0}]{Sobre este Documento}
+\begin{frame}[label={sec:orga653d3f}]{Sobre este Documento}
 \begin{itemize}
 \item Este documento tiene la propuesta de temas a tratar y desarrollar
 por los estudiantes.
@@ -87,100 +64,69 @@ por los estudiantes.
 consultar bibliografía adicional.
 \end{itemize}
 \end{frame}
-\section{Estructura del sistema de Memoria(E1, 11, 136)}
-\label{sec:orgbbcc6a9}
-\begin{frame}[label={sec:orgb28f405}]{Principio de Localidad (E1, 11, 137)}
-\end{frame}
-\begin{frame}[label={sec:org2d77c82}]{Características de los sistemas de Memoria (E1, 11, 142)}
-\end{frame}
-\begin{frame}[label={sec:orgc9669ff}]{Ubicación (E1)}
-\end{frame}
-\begin{frame}[label={sec:org952d763}]{Capacidad (E1)}
-\end{frame}
-\begin{frame}[label={sec:orgf48360d}]{Unidad de Transferencia (E1)}
-\end{frame}
-\begin{frame}[label={sec:orgf1a6e8d}]{Acceso secuencial (E1)}
-\end{frame}
-\begin{frame}[label={sec:orgad7f9b0}]{Acceso directo (E1)}
-\end{frame}
-\begin{frame}[label={sec:orge80f3cf}]{Acceso aleatorio (E1)}
-\end{frame}
-\begin{frame}[label={sec:orgd581a35}]{Tiempo de Acceso (E1)}
-\end{frame}
-\begin{frame}[label={sec:orgd69d8e0}]{Tiempo de ciclo de memoria (E1)}
-\end{frame}
-\begin{frame}[label={sec:org6b31941}]{Jerarquía de Memoria (E1, 11,145) hasta (E1,11,150)}
-\end{frame}
 \section{Memoria Cache (E2, 11, 162)}
-\label{sec:org8bc9988}
-\begin{frame}[label={sec:org78fd263}]{Principios Básicos de las Memorias Caché (E2,11,163)(E2,7,133)}
+\label{sec:org15c2465}
+\begin{frame}[label={sec:org9c20f6a}]{Principios Básicos de las Memorias Caché (E2,11,163)(E2,7,133)}
+\alert{\alert{\alert{¿Para que sirve?}}} 
+
+
+El objetivo principal de la memoria caché es mejorar la velocidad de acceso a los datos almacenados, combinando el acceso rápido a datos de una memoria más cara y de alta velocidad (memoria caché) con el almacenamiento más lento pero de mayor capacidad de la memoria principal.
+
+
+\alert{\alert{\alert{Funcionamiento}}}
+
+
 \begin{itemize}
-\item Realice un resumen de lo más esencial del tema
+\item La CPU transfiere palabras o bloques entre la caché y la memoria principal. La caché actúa como intermediaria rápida entre la CPU y la memoria principal, almacenando temporalmente datos que la CPU necesita frecuentemente.
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:org14539d4}]{Elementos de Diseño de la memoria Caché}
+
+
+\begin{frame}[label={sec:org8717944}]{Principios Básicos de las Memorias Caché (E2,11,163)(E2,7,133)}
+\begin{itemize}
+\item En el modelo simple de caché (como muestra la Figura 5.1a), la CPU realiza transferencias rápidas a la caché y transferencias más lentas a la memoria principal.
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./Imagenes/captura1.png}
+\end{center}
 \end{frame}
-\begin{frame}[label={sec:org46e052c}]{Tamaño Caché}
+
+\begin{frame}[label={sec:orgf82c844}]{Principios Básicos de las Memorias Caché (E2,11,163)(E2,7,133)}
+Niveles de Caché: Se organizan en varios niveles (L1, L2, L3). A medida que se avanza en los niveles, la velocidad disminuye, pero la capacidad aumenta.
+
+\begin{itemize}
+\item Caché de Nivel 1 (L1): La más rápida y de menor capacidad.
+\item Caché de Nivel 2 (L2): Un poco más lenta, pero con mayor capacidad.
+\item Caché de Nivel 3 (L3): Menos rápida que L1 y L2, pero aún más rápida que la memoria principal.
+\end{itemize}
 \end{frame}
-\begin{frame}[label={sec:org4398bc6}]{Función de Correspondencia (E2,11,170)(E2,7,137)}
+
+
+\begin{frame}[label={sec:orgc8662c8}]{Elementos de Diseño de la memoria Caché}
+\end{frame}
+\begin{frame}[label={sec:org3ed5649}]{Tamaño Caché}
+\end{frame}
+\begin{frame}[label={sec:org7ad22ee}]{Función de Correspondencia (E2,11,170)(E2,7,137)}
 \begin{itemize}
 \item Se recomienda la tabla 5.3 página 170 de la 10ma edición
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:org18bec8d}]{Algoritmo de Sustitución (E2,7,148)}
+\begin{frame}[label={sec:org9989dd4}]{Algoritmo de Sustitución (E2,7,148)}
 \end{frame}
-\begin{frame}[label={sec:org3db2b60}]{Política de escritura}
+\begin{frame}[label={sec:orgc6c32c5}]{Política de escritura}
 \end{frame}
-\begin{frame}[label={sec:org67c956b}]{Tamaño de Línea}
+\begin{frame}[label={sec:orgbf03ad7}]{Tamaño de Línea}
 \end{frame}
-\begin{frame}[label={sec:orgca54c87}]{Número de Cachés (E2, 7, 150)}
-\end{frame}
-\section{Memoria Interna (E3,7,172)(E3,11,201)}
-\label{sec:org168de22}
-\begin{frame}[label={sec:orga7882f7}]{Organización Memoria Principal Semiconductora (E3,7,172) (E3,11,201)}
+\begin{frame}[label={sec:org900b23e}]{Número de Cachés (E2, 7, 150)}
 \begin{itemize}
 \item \autocite{stallings2006} página 172
 \item \autocite{stallings2022computer} página 201 Capítulo 6
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:org0f75759}]{DRAM y SRAM}
-\end{frame}
-\begin{frame}[label={sec:orga42a711}]{RAM dinámica}
-\end{frame}
-\begin{frame}[label={sec:org8c7bcee}]{SRAM RAM estática}
-\end{frame}
-\begin{frame}[label={sec:orgec5a4db}]{Tipos de ROM}
-\end{frame}
-\begin{frame}[label={sec:org876cf24}]{Chip de Memoria RAM}
-\end{frame}
-\section{Corrección de Errores (E4, 7, 181)(E4,11,211)}
-\label{sec:org9cbfe42}
-\begin{frame}[label={sec:orgcb28f77}]{Hard Error vs Soft Error}
-\end{frame}
-\begin{frame}[label={sec:org0545cde}]{Código de Hamming}
-\begin{itemize}
-\item Realice una explicación sencilla con ejemplo
-\end{itemize}
-\end{frame}
-\section{Organización Avanzada de Memorias RAM (E5, 7, 187)(E5,11,216)}
-\label{sec:org55d01b7}
-\begin{frame}[label={sec:org8c229ba}]{Dram síncrona}
-\end{frame}
-\begin{frame}[label={sec:orgaee377f}]{DDR SDRAM}
-\end{frame}
-\begin{frame}[label={sec:org9db7df4}]{EDRAM}
-\end{frame}
-\begin{frame}[label={sec:org7c59c9e}]{Flash Memory(E5,11,223)}
-\end{frame}
-\section{Memorias no volátiles de estado solido(E5,11,226)}
-\label{sec:orgbccf795}
-\begin{frame}[label={sec:org8060d2a}]{STT-RAM}
-\end{frame}
-\begin{frame}[label={sec:org33ce9f3}]{PCRAM}
-\end{frame}
 
 \section{Referencias}
-\label{sec:orgc7f85ac}
+\label{sec:orgab3e7f6}
 \begin{frame}[allowframebreaks]{Bibliografía}
 \printbibliography
 \end{frame}
