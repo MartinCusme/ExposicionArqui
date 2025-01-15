@@ -17,6 +17,11 @@
 #+exclude_tags: noexport
 #+creator: Emacs 27.1 (Org mode 9.3)
 #+cite_export: biblatex
+# to enable beamer mode M-x org-beamer-mode
+#+options: H:2
+#+latex_class: beamer
+#+columns: %45ITEM %10BEAMER_env(Env) %10BEAMER_act(Act) %4BEAMER_col(Col) %8BEAMER_opt(Opt)
+#+beamer_theme: Madrid
 
 #+bibliography: ./bibliography.bib
 #+LATEX_HEADER: \nocite{*}
@@ -71,8 +76,32 @@ Niveles de Caché: Se organizan en varios niveles (L1, L2, L3). A medida que se 
 - Caché de Nivel 3 (L3): Menos rápida que L1 y L2, pero aún más rápida que la memoria principal.
 
 
-** Elementos de Diseño de la memoria Caché
-** Tamaño Caché
+*** Elementos de Diseño de la memoria Caché
+*** Introducción a la Caché
+- "La memoria caché mejora la velocidad de acceso
+  al reducir la distancia entre el procesador y la memoria principal."
+- "Los fallos de caché generan tráfico en el bus del sistema."
+[[./Imagenes/fig4.6.png]]
+*** Parámetros de Diseño de la Caché
+- "La función de correspondencia, el tamaño de línea y el algoritmo de sustitución
+  son clave para el diseño de una caché eficiente."
+- "La jerarquía de cachés puede mejorar el rendimiento en aplicaciones bien optimizadas."
+ [[./Imagenes/tabla5.1.png]]
+ 
+
+*** Tamaño Caché
+- "El tamaño de la caché impacta directamente en su velocidad y costo."
+- "No existe un tamaño 'óptimo' único, ya que depende de la naturaleza de las tareas."
+ [[./Imagenes/tabla5.2.png]]
+
+*** Tipos de caché
+- "La caché lógica utiliza direcciones virtuales; la física, direcciones físicas."
+- "La caché lógica puede ser más rápida pero requiere mayor gestión en cambios de contexto."
+  [[./Imagenes/fig5.png]]
+
+
+
+
 ** Función de Correspondencia (E2,11,170)(E2,7,137)
 - Se recomienda la tabla 5.3 página 170 de la 10ma edición
 ** Algoritmo de Sustitución (E2,7,148)
