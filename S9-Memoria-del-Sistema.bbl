@@ -37,24 +37,52 @@
       \strng{authorbibnamehash}{bb9ca3ca373a55ac4be837d0fdb28903}
       \strng{authornamehash}{bb9ca3ca373a55ac4be837d0fdb28903}
       \strng{authorfullhash}{bb9ca3ca373a55ac4be837d0fdb28903}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9788489660823}
       \field{series}{Fuera de colección Out of series}
       \field{title}{Organización y arquitectura de computadores}
       \field{year}{2006}
-      \true{nocite}
       \verb{urlraw}
       \verb https://books.google.com.ec/books?id=C3HTAAAACAAJ
       \endverb
       \verb{url}
       \verb https://books.google.com.ec/books?id=C3HTAAAACAAJ
       \endverb
+    \endentry
+    \entry{stallings2022computer}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0599c551bf066f66e0e9c44815384cb4}{%
+           family={Stallings},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Global Editions}%
+      }
+      \strng{namehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{fullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{bibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorbibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authornamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorfullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer Organization and arquitecture}
+      \field{year}{2022}
+      \true{nocite}
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
@@ -76,24 +104,52 @@
       \strng{authorbibnamehash}{bb9ca3ca373a55ac4be837d0fdb28903}
       \strng{authornamehash}{bb9ca3ca373a55ac4be837d0fdb28903}
       \strng{authorfullhash}{bb9ca3ca373a55ac4be837d0fdb28903}
+      \field{extraname}{1}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9788489660823}
       \field{series}{Fuera de colección Out of series}
       \field{title}{Organización y arquitectura de computadores}
       \field{year}{2006}
-      \true{nocite}
       \verb{urlraw}
       \verb https://books.google.com.ec/books?id=C3HTAAAACAAJ
       \endverb
       \verb{url}
       \verb https://books.google.com.ec/books?id=C3HTAAAACAAJ
       \endverb
+    \endentry
+    \entry{stallings2022computer}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0599c551bf066f66e0e9c44815384cb4}{%
+           family={Stallings},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Global Editions}%
+      }
+      \strng{namehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{fullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{bibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorbibnamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authornamehash}{0599c551bf066f66e0e9c44815384cb4}
+      \strng{authorfullhash}{0599c551bf066f66e0e9c44815384cb4}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer Organization and arquitecture}
+      \field{year}{2022}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

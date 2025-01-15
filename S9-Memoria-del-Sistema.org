@@ -10,8 +10,8 @@
 
 #+title: S9-Memoria-del-Sistema
 #+date: 
-#+author: Lenin G. Falconí, Richard Dawkins, Jean LeCunn
-#+email: lenin.falconi@epn.edu.ec, richard.dawkins@anotheremail.com, lecunn@meta.com
+#+author: Lenin G. Falconí, Richard Dawkins, Richard Tipantiza
+#+email: lenin.falconi@epn.edu.ec, richard.dawkins@anotheremail.com, richard.tipantiza@epn.edu.ec
 #+language: es
 #+select_tags: export
 #+exclude_tags: noexport
@@ -104,12 +104,51 @@ Niveles de Caché: Se organizan en varios niveles (L1, L2, L3). A medida que se 
 
 ** Función de Correspondencia (E2,11,170)(E2,7,137)
 - Se recomienda la tabla 5.3 página 170 de la 10ma edición
+
+* Algoritmo de Sustitución
 ** Algoritmo de Sustitución (E2,7,148)
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:
+Una vez llena la caché, se debe reemplazar un bloque existente para introducir uno nuevo.
+En correspondencia directa, no hay elección, ya que cada bloque tiene una línea específica.
+En técnicas asociativas, se requieren algoritmos de sustitución implementados en hardware para alta velocidad.[cite:@stallings2006organización]
+1. LRU (Least Recently Used)
+2. FIFO (First-In-First-Out
+3. LFU (Least Frequently Used
+4. Aleatoria
+
+* Política de escritura
 ** Política de escritura
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:
+- Casos de reemplazo en caché
+  1. Casos de reemplazo en caché
+  2. Casos de reemplazo en caché
+- Problemas al reemplazar bloques
+  1. Acceso múltiple a la memoria principal
+  2. Sistemas multiprocesado
+- Sistemas multiprocesado
+  1. Escritura inmediata
+  2. Postescritura
+- Estadísticas de escritura
+- Vigilancia del bus con escritura inmediata
+- Transparencia hardware
+- Memoria excluida de caché
+
+* Tamaño de Linea
 ** Tamaño de Línea
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:
+- Tamaño de línea de caché:
+- Efectos al aumentar el tamaño del bloque:
+  1. Reducción de bloques en caché
+  2. Mayor distancia de las palabras adicionales:
+- Relación compleja entre tamaño y tasa de aciertos
 ** Número de Cachés (E2, 7, 150)
-- [cite:@stallings2006] página 172
-- [cite:@stallings2022computer] página 201 Capítulo 6
+
 
 * Referencias
 ** Bibliografía
