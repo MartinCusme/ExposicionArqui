@@ -103,7 +103,20 @@ Niveles de Caché: Se organizan en varios niveles (L1, L2, L3). A medida que se 
 
 
 ** Función de Correspondencia (E2,11,170)(E2,7,137)
-- Se recomienda la tabla 5.3 página 170 de la 10ma edición
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:
+
+Se requiere un algoritmo que permita asociar los bloques de memoria principal con las líneas de caché, ya que hay menos líneas de caché que bloques de memoria. Además, es necesario un método para identificar qué bloque de memoria está ocupando una línea específica. Para organizar la caché, se utilizan tres técnicas principales: correspondencia directa, asociativa y asociativa por conjuntos, las cuales serán explicadas junto con ejemplos concretos.
+El texto explica tres técnicas para organizar la caché:
+
+ - **Correspondencia directa:** Cada bloque de memoria principal se asigna a una línea de caché específica. Por ejemplo, el bloque 10 se asigna a la línea 10 mod 8 = 2.
+   
+ - **Correspondencia asociativa:** Cualquier bloque puede ocupar cualquier línea de caché, lo que ofrece más flexibilidad, pero es más lento de buscar.
+   
+ - **Correspondencia asociativa por conjuntos:** La caché se divide en conjuntos, y cada bloque puede ocupar cualquier línea dentro de un conjunto específico. Por ejemplo, el bloque 10 se asigna al conjunto 10 mod 4 = 2.
+   
+Estas técnicas optimizan la asignación de memoria y el uso eficiente de la caché.
 
 * Algoritmo de Sustitución
 ** Algoritmo de Sustitución (E2,7,148)
@@ -148,7 +161,20 @@ En técnicas asociativas, se requieren algoritmos de sustitución implementados 
   2. Mayor distancia de las palabras adicionales:
 - Relación compleja entre tamaño y tasa de aciertos
 ** Número de Cachés (E2, 7, 150)
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:
 
+Inicialmente, los sistemas contaban con una sola caché, pero con el tiempo se ha vuelto común utilizar múltiples cachés. Este diseño incluye consideraciones como el número de niveles de caché y el uso de cachés unificadas o separadas. Las cachés separadas evitan la competencia entre instrucciones y datos, mejorando el rendimiento en sistemas avanzados.
+
+**Cachés Multinivel**
+Las cachés on-chip, integradas en el procesador, reducen el uso del bus externo y mejoran el rendimiento. Normalmente, se complementan con una caché externa (L2). Los diseños más recientes incluyen múltiples niveles: L1, L2 y, en algunos casos, L3. Estas cachés adicionales, ahora frecuentemente on-chip, mejoran significativamente el rendimiento al reducir los tiempos de acceso a memoria, aunque complican aspectos como tamaño, políticas de escritura y algoritmos de reemplazo.
+
+**Caché Unificada**
+Las cachés unificadas almacenan tanto instrucciones como datos en un único espacio, maximizando la tasa de aciertos al adaptarse dinámicamente a las necesidades de ejecución. Además, solo requieren un diseño único, simplificando la implementación.
+
+**Cachés Separadas**
+Por otro lado, las cachés separadas para instrucciones y datos son preferidas en sistemas super-escalares y con segmentación de cauce. Este diseño elimina la competencia por recursos entre la ejecución de instrucciones y la unidad de datos, mejorando el rendimiento y optimizando la ejecución paralela de instrucciones.
 
 * Referencias
 ** Bibliografía
